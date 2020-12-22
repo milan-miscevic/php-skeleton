@@ -88,3 +88,19 @@ jobs:
 
       - name: Run the unit tests
         run: vendor/bin/phpunit
+
+  version:
+    name: Version check
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-version:
+          - "7.2"
+          - "7.3"
+          - "7.4"
+
+    steps:
+      - name: Version check
+        run: php -v
