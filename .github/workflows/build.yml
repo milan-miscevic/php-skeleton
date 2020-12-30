@@ -102,5 +102,10 @@ jobs:
           - "7.4"
 
     steps:
+      - name: Install PHP
+        uses: shivammathur/setup-php@2.9.0
+        with:
+          php-version: "${{ matrix.php-version }}"
+
       - name: Version check
         run: php -v
