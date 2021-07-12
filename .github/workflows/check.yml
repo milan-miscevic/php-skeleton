@@ -109,3 +109,19 @@ jobs:
 
       - name: Run the unit tests
         run: vendor/bin/phpunit
+
+  unit2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v2
+    - name: build application
+      run: make unit
+
+  phpstan2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v2
+    - name: build application
+      run: make phpstan
