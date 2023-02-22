@@ -1,0 +1,14 @@
+.editorconfig export-ignore
+.gitattributes export-ignore
+.github/ export-ignore
+.gitignore export-ignore
+.gitmodules export-ignore
+.php-cs-fixer.dist.php export-ignore
+composer.lock export-ignore
+infection.json.dist export-ignore
+logs/ export-ignore
+Makefile export-ignore
+phpstan.neon.dist export-ignore
+phpunit.xml.dist export-ignore
+psalm.xml export-ignore
+tests/ export-ignore
