@@ -4,7 +4,7 @@ includes:
 parameters:
     level: max
     paths:
-        # #todo remove unnecessary folders
+        # @todo remove unnecessary folders
         - bin
         - config
         - data

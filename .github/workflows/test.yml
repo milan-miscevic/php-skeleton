@@ -60,7 +60,7 @@ jobs:
           php-version: "${{ matrix.php-version }}"
       - uses: "actions/checkout@v2"
       - uses: "php-actions/composer@v1"
-      - run: "vendor/bin/psalm --show-info=true --shepherd" # #todo remove --shepherd in private
+      - run: "vendor/bin/psalm --show-info=true --shepherd" # @todo remove --shepherd in private
 
   standards:
     name: "PHP-CS-Fixer coding standards"
@@ -83,7 +83,7 @@ jobs:
     name: "PHPUnit unit tests"
     runs-on: "ubuntu-latest"
 
-# #todo remove unused versions in project
+# @todo remove unused versions in project
     strategy:
       matrix:
         php-version:

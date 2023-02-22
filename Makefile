@@ -1,5 +1,5 @@
 DOCKER=docker-compose -f ./docker/docker-compose.yml
-# #todo adapt version and cli/fpm if needed
+# @todo adapt version and cli/fpm if needed
 PHP=php80-cli
 
 build: install
@@ -10,7 +10,7 @@ cli:
 coverage:
 	$(DOCKER) run --rm $(PHP) php -dxdebug.mode=coverage ./vendor/bin/phpunit --coverage-text
 
-# #todo remove this rule if not needed
+# @todo remove this rule if not needed
 down:
 	$(DOCKER) down --remove-orphans
 
@@ -35,12 +35,12 @@ standards:
 
 test: standards unit phpstan psalm mutation
 
-# #todo remove unused commands in project
+# @todo remove unused commands in project
 unit:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpunit
 	$(DOCKER) run --rm php81-cli ./vendor/bin/phpunit
 	$(DOCKER) run --rm php82-cli ./vendor/bin/phpunit
 
-# #todo remove this rule if not needed
+# @todo remove this rule if not needed
 up:
 	$(DOCKER) up -d

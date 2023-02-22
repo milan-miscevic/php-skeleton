@@ -7,7 +7,7 @@
     resolveFromConfigFile="true"
 >
     <projectFiles>
-        <!-- #todo remove unnecessary folders -->
+        <!-- @todo remove unnecessary folders -->
         <directory name="bin" />
         <directory name="config" />
         <directory name="data" />

@@ -1,7 +1,7 @@
 <?php
 
 $finder = PhpCsFixer\Finder::create()
-    // #todo remove unnecessary folders
+    // @todo remove unnecessary folders
     ->in(__DIR__ . '/bin')
     ->in(__DIR__ . '/config')
     ->in(__DIR__ . '/data')
